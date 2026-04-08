@@ -7,14 +7,14 @@
 .titleInfo h2 {
   font-size: 24px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: 2px;
 }
 
 .titleInfo p {
   font-size: 8px;
   font-weight: 800;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 2px;
   margin-top: 5px;
 }
@@ -40,7 +40,7 @@
 .statInfo p {
   font-size: 8px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 1.5px;
   margin-bottom: 5px;
 }
@@ -48,7 +48,7 @@
 .statInfo h3 {
   font-size: 18px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .statIcon {
@@ -61,7 +61,7 @@
 }
 
 .statIcon[data-color="orange"] { background: #FFF9E6; color: #ff9f43; }
-.statIcon[data-color="blue"] { background: #E6EBF0; color: #0a3d62; }
+.statIcon[data-color="blue"] { background: #E6EBF0; color: #2f3640; }
 .statIcon[data-color="green"] { background: #E6F7F1; color: #2ed573; }
 .statIcon[data-color="purple"] { background: #E6EBF0; color: #6c5ce7; }
 
@@ -87,7 +87,7 @@
   font-size: 9px;
   font-weight: 900;
   letter-spacing: 1.5px;
-  color: #8d939e;
+  color: #718093;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -128,12 +128,12 @@
 .listHeader p {
   font-size: 9px;
   font-weight: 800;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 1.5px;
 }
 
 .listHeader p span {
-  color: #0a3d62;
+  color: #2f3640;
   font-weight: 900;
 }
 
@@ -185,7 +185,7 @@
 .cardHeader h4 {
   font-size: 16px;
   font-weight: 950;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: -0.5px;
 }
 
@@ -201,7 +201,7 @@
 
 .desc {
   font-size: 13px;
-  color: #8d939e;
+  color: #718093;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -209,7 +209,7 @@
 .patientCount {
   font-size: 9px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: 1px;
   opacity: 0.6;
 }

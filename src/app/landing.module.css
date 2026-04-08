@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: #0a3d62;
+  background-color: #2f3640;
   color: white;
   overflow-x: hidden;
 }
@@ -197,7 +197,7 @@
   bottom: 40px;
   left: -40px;
   background: white;
-  color: #0a3d62;
+  color: #2f3640;
   padding: 20px 30px;
   border-radius: 24px;
   display: flex;
@@ -226,7 +226,7 @@
 .floatingStat p {
   font-size: 8px;
   font-weight: 900;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 2px;
   margin-top: 2px;
 }
@@ -235,7 +235,7 @@
 .showcase {
   background: #F8FAFC;
   padding: 140px 80px;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .sectionHeader {
@@ -298,7 +298,7 @@
 .cardInfo p {
   font-size: 15px;
   line-height: 1.6;
-  color: #8d939e;
+  color: #718093;
 }
 
 /* Feature Detail */
@@ -309,7 +309,7 @@
   align-items: center;
   gap: 100px;
   background: white;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .detailText h2 {
@@ -321,7 +321,7 @@
 .detailText p {
   font-size: 16px;
   line-height: 1.6;
-  color: #8d939e;
+  color: #718093;
   margin-bottom: 40px;
 }
 
@@ -338,7 +338,7 @@
   gap: 12px;
   font-size: 14px;
   font-weight: 800;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .dot {

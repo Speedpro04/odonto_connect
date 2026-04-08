@@ -13,21 +13,21 @@
 .titleInfo h2 {
   font-size: 24px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: 2px;
 }
 
 .titleInfo p {
   font-size: 8px;
   font-weight: 800;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 2px;
   margin-top: 5px;
 }
 
 .hideBtn {
   background: white;
-  color: #0a3d62;
+  color: #2f3640;
   padding: 12px 24px;
   border-radius: 14px;
   font-size: 9px;
@@ -61,7 +61,7 @@
 .statInfo p {
   font-size: 10px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
@@ -69,7 +69,7 @@
 .statInfo h3 {
   font-size: 32px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: -1px;
 }
 
@@ -86,7 +86,7 @@
 .sub {
   font-size: 10px;
   font-weight: 800;
-  color: #0a3d62;
+  color: #2f3640;
   margin-top: 10px;
   letter-spacing: 1px;
 }
@@ -101,7 +101,7 @@
 }
 
 .icon.teal { background: #E6F7F7; color: #7ed6df; }
-.icon.blue { background: #E6EBF0; color: #0a3d62; }
+.icon.blue { background: #E6EBF0; color: #2f3640; }
 .icon.green { background: #E6F7F1; color: #2ed573; }
 
 /* Main Grid */
@@ -129,14 +129,14 @@
 .sectionTitle {
   font-size: 11px;
   font-weight: 950;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: 2px;
 }
 
 .filterSelect {
   font-size: 9px;
   font-weight: 800;
-  color: #0a3d62;
+  color: #2f3640;
   background: #F8FAFC;
   padding: 8px 16px;
   border-radius: 10px;
@@ -159,20 +159,20 @@
   padding: 20px;
   font-size: 9px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 2px;
 }
 
 .table td {
   padding: 24px 20px;
   font-size: 13px;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
-.id { font-weight: 500; color: #cbd5e0 !important; }
+.id { font-weight: 500; color: #718093 !important; }
 .patient { font-weight: 900; }
 .val { font-weight: 900; }
-.date { font-weight: 500; color: #cbd5e0; }
+.date { font-weight: 500; color: #718093; }
 
 .statusBadge {
   padding: 6px 14px;
@@ -210,7 +210,7 @@
 .planHeader h3 {
   font-size: 8px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 2px;
 }
 
@@ -235,7 +235,7 @@
 .planPrice {
   font-size: 48px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: -2px;
   margin-bottom: 40px;
 }
@@ -256,7 +256,7 @@
 .planStatItem p {
   font-size: 8px;
   font-weight: 800;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
@@ -264,7 +264,7 @@
 .planStatItem strong {
   font-size: 11px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .upgradeBtn {
@@ -293,7 +293,7 @@
 .historyCard h3 {
   font-size: 10px;
   font-weight: 950;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
 }
@@ -314,13 +314,13 @@
   display: block;
   font-size: 14px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .historyInfo p {
   font-size: 9px;
   font-weight: 500;
-  color: #cbd5e0;
+  color: #718093;
   margin-top: 4px;
 }
 

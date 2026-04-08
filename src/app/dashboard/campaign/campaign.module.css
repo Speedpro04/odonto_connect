@@ -13,14 +13,14 @@
 .titleRow h2 {
   font-size: 24px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
   letter-spacing: 2px;
 }
 
 .titleRow p {
   font-size: 11px;
   font-weight: 800;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 2px;
   margin-top: 5px;
 }
@@ -70,15 +70,15 @@
   justify-content: center;
 }
 
-.kpiIcon[data-color="teal"] { background: rgba(0,98,102,0.08); color: #006266; }
-.kpiIcon[data-color="blue"] { background: rgba(10,61,98,0.08); color: #006266; }
+.kpiIcon[data-color="teal"] { background: rgba(0,98,102,0.08); color: #2f3640; }
+.kpiIcon[data-color="blue"] { background: rgba(10,61,98,0.08); color: #2f3640; }
 .kpiIcon[data-color="green"] { background: rgba(46,213,115,0.1); color: #2ed573; }
 .kpiIcon[data-color="coral"] { background: rgba(255,118,117,0.1); color: #ff7675; }
 
 .kpiCard p {
   font-size: 10px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
@@ -86,7 +86,7 @@
 .kpiCard h3 {
   font-size: 24px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
 }
 
 /* Tabs */
@@ -107,7 +107,7 @@
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1.5px;
-  color: #8d939e;
+  color: #718093;
   transition: all 0.2s;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .selected {
-  border-color: #006266;
+  border-color: #2f3640;
   box-shadow: 0 0 0 3px rgba(0,98,102,0.1);
 }
 
@@ -162,7 +162,7 @@
 .campaignItemTop h4 {
   font-size: 16px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
 }
 
 .statusPill {
@@ -180,7 +180,7 @@
   align-items: center;
   gap: 8px;
   font-size: 12px;
-  color: #8d939e;
+  color: #718093;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -205,7 +205,7 @@
   margin-top: 8px;
   font-size: 11px;
   font-weight: 800;
-  color: #8d939e;
+  color: #718093;
 }
 
 /* Campaign Detail */
@@ -228,14 +228,14 @@
 .detailHeader h3 {
   font-size: 22px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
   margin-bottom: 5px;
 }
 
 .detailHeader p {
   font-size: 12px;
   font-weight: 700;
-  color: #8d939e;
+  color: #718093;
 }
 
 .detailActions {
@@ -261,7 +261,7 @@
   height: 44px;
   border-radius: 3px;
   background: #F8FAFC;
-  color: #cbd5e0;
+  color: #718093;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +285,7 @@
 .detailStat p {
   font-size: 10px;
   font-weight: 900;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 1.5px;
   margin-bottom: 8px;
 }
@@ -293,7 +293,7 @@
 .detailStat h4 {
   font-size: 22px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
 }
 
 /* Message Preview */
@@ -306,7 +306,7 @@
 .messagePreview label {
   font-size: 11px;
   font-weight: 900;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 2px;
 }
 
@@ -331,7 +331,7 @@
 .messageBubble p {
   font-size: 14px;
   font-weight: 500;
-  color: #006266;
+  color: #2f3640;
   line-height: 1.6;
 }
 
@@ -345,7 +345,7 @@
 .timeline label {
   font-size: 11px;
   font-weight: 900;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
@@ -366,7 +366,7 @@
 }
 
 .stepIcon {
-  color: #cbd5e0;
+  color: #718093;
 }
 
 .done .stepIcon {
@@ -377,14 +377,14 @@
   display: block;
   font-size: 12px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
   margin-bottom: 3px;
 }
 
 .stepInfo p {
   font-size: 12px;
   font-weight: 500;
-  color: #8d939e;
+  color: #718093;
 }
 
 /* Templates */
@@ -404,7 +404,7 @@
 .iaNote p {
   font-size: 11px;
   font-weight: 900;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 1.5px;
 }
 
@@ -429,7 +429,7 @@
   width: 52px;
   height: 52px;
   background: rgba(0,98,102,0.08);
-  color: #006266;
+  color: #2f3640;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -444,14 +444,14 @@
 .tplInfo h4 {
   font-size: 17px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
   margin-bottom: 5px;
 }
 
 .tplInfo p {
   font-size: 13px;
   font-weight: 500;
-  color: #8d939e;
+  color: #718093;
 }
 
 .tplInfo span {
@@ -459,7 +459,7 @@
   margin-top: 10px;
   font-size: 11px;
   font-weight: 900;
-  color: #006266;
+  color: #2f3640;
   background: rgba(0,98,102,0.08);
   padding: 4px 12px;
   border-radius: 3px;
@@ -490,6 +490,6 @@
 
 .emptyMsg {
   font-size: 16px;
-  color: #cbd5e0;
+  color: #718093;
   font-weight: 700;
 }

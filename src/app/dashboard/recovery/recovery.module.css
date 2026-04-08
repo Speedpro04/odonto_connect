@@ -7,14 +7,14 @@
 .titleInfo h2 {
   font-size: 24px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: 2px;
 }
 
 .titleInfo p {
   font-size: 8px;
   font-weight: 800;
-  color: #8d939e;
+  color: #718093;
   letter-spacing: 2px;
   margin-top: 5px;
 }
@@ -46,14 +46,14 @@
 }
 
 .statIcon[data-color="orange"] { background: #FFF9E6; color: #ff9f43; }
-.statIcon[data-color="blue"] { background: #E6EBF0; color: #0a3d62; }
+.statIcon[data-color="blue"] { background: #E6EBF0; color: #2f3640; }
 .statIcon[data-color="green"] { background: #E6F7F1; color: #2ed573; }
 .statIcon[data-color="purple"] { background: #E6EBF0; color: #6c5ce7; }
 
 .statInfo p {
   font-size: 8px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 1.5px;
   margin-bottom: 5px;
 }
@@ -61,7 +61,7 @@
 .statInfo h3 {
   font-size: 18px;
   font-weight: 900;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 /* Table Card */
@@ -83,14 +83,14 @@
 .headerTitle h3 {
   font-size: 11px;
   font-weight: 950;
-  color: #0a3d62;
+  color: #2f3640;
   letter-spacing: 2px;
 }
 
 .headerTitle p {
   font-size: 8px;
   font-weight: 800;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 1.5px;
   margin-top: 6px;
 }
@@ -120,14 +120,14 @@
   padding: 20px 30px;
   font-size: 8px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 2px;
 }
 
 .table td {
   padding: 30px;
   font-size: 13px;
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .patientCell {
@@ -144,13 +144,13 @@
 .patientCell span {
   font-size: 8px;
   font-weight: 900;
-  color: #cbd5e0;
+  color: #718093;
   letter-spacing: 1px;
   margin-top: 4px;
 }
 
 .mutedText {
-  color: #cbd5e0;
+  color: #718093;
   font-weight: 500;
 }
 
@@ -186,7 +186,7 @@
   gap: 10px;
   font-size: 10px;
   font-weight: 700;
-  color: #8d939e;
+  color: #718093;
 }
 
 .actions {
@@ -216,7 +216,7 @@
   width: 36px;
   height: 36px;
   background: #F8FAFC;
-  color: #cbd5e0;
+  color: #718093;
   border-radius: 12px;
   display: flex;
   align-items: center;

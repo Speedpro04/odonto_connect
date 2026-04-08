@@ -149,7 +149,7 @@
   padding: 18px 20px 18px 55px;
   font-family: inherit;
   font-size: 15px;
-  color: #0a3d62;
+  color: #2f3640;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -166,13 +166,13 @@
 }
 
 .passwordToggle:hover {
-  color: #0a3d62;
+  color: #2f3640;
 }
 
 .submitButton {
   margin-top: 10px;
   background: #7ed6df;
-  color: #0a3d62;
+  color: #2f3640;
   font-weight: 900;
   font-size: 13px;
   letter-spacing: 2px;
