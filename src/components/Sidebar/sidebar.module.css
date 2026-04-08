@@ -44,8 +44,8 @@
   align-items: center;
   gap: 20px;
   padding: 18px 25px;
-  border-radius: 7px;
-  color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  color: #718093;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -54,7 +54,7 @@
 }
 
 .navItem svg {
-  color: rgba(255, 255, 255, 0.3);
+  color: #718093;
 }
 
 .navItem:hover {
@@ -88,7 +88,7 @@
 .userModule {
   background: rgba(255, 255, 255, 0.08);
   padding: 15px;
-  border-radius: 7px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -100,7 +100,7 @@
   height: 40px;
   background: linear-gradient(135deg, #7ed6df, #22a6b3);
   color: #006266;
-  border-radius: 7px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +123,7 @@
 .userInfo span {
   font-size: 11px;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.4);
+  color: #718093;
   letter-spacing: 1px;
 }
 
@@ -132,7 +132,7 @@
   align-items: center;
   gap: 15px;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.2);
+  color: #718093;
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 2px;

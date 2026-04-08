@@ -170,7 +170,7 @@
 }
 
 .id { font-weight: 500; color: #cbd5e0 !important; }
-.patient { font-weight: 900; font-style: italic; }
+.patient { font-weight: 900; }
 .val { font-weight: 900; }
 .date { font-weight: 500; color: #cbd5e0; }
 

@@ -29,7 +29,7 @@
   background: #006266;
   color: white;
   padding: 14px 28px;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 2px;
@@ -54,7 +54,7 @@
 .kpiCard {
   background: white;
   padding: 28px;
-  border-radius: 7px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 18px;
@@ -64,7 +64,7 @@
 .kpiIcon {
   width: 48px;
   height: 48px;
-  border-radius: 7px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +95,7 @@
   gap: 10px;
   background: white;
   padding: 8px;
-  border-radius: 7px;
+  border-radius: 5px;
   align-self: flex-start;
   box-shadow: 0 4px 15px rgba(0,0,0,0.02);
   border: 1px solid rgba(0,0,0,0.04);
@@ -103,7 +103,7 @@
 
 .tab {
   padding: 12px 24px;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1.5px;
@@ -135,7 +135,7 @@
 .campaignItem {
   background: white;
   padding: 24px;
-  border-radius: 7px;
+  border-radius: 5px;
   cursor: pointer;
   border: 2px solid transparent;
   box-shadow: 0 6px 20px rgba(0,0,0,0.03);
@@ -167,7 +167,7 @@
 
 .statusPill {
   padding: 4px 12px;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -188,14 +188,14 @@
 .progressBar {
   height: 6px;
   background: #F0F2F5;
-  border-radius: 7px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 .progressFill {
   height: 100%;
   background: linear-gradient(90deg, #006266, #7ed6df);
-  border-radius: 7px;
+  border-radius: 5px;
   transition: width 0.5s ease;
 }
 
@@ -211,7 +211,7 @@
 /* Campaign Detail */
 .campaignDetail {
   background: white;
-  border-radius: 7px;
+  border-radius: 5px;
   padding: 40px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.03);
   display: flex;
@@ -247,7 +247,7 @@
   background: #FFF9E6;
   color: #ffa502;
   padding: 12px 20px;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -259,7 +259,7 @@
 .settingsBtn {
   width: 44px;
   height: 44px;
-  border-radius: 7px;
+  border-radius: 5px;
   background: #F8FAFC;
   color: #cbd5e0;
   display: flex;
@@ -278,7 +278,7 @@
 .detailStat {
   background: #F8FAFC;
   padding: 20px;
-  border-radius: 7px;
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -316,7 +316,7 @@
   gap: 15px;
   background: #F8FAFC;
   padding: 25px;
-  border-radius: 7px;
+  border-radius: 5px;
   border-left: 3px solid #006266;
 }
 
@@ -324,7 +324,7 @@
   width: 36px;
   height: 36px;
   background: linear-gradient(135deg, #006266, #7ed6df);
-  border-radius: 7px;
+  border-radius: 5px;
   flex-shrink: 0;
 }
 
@@ -356,7 +356,7 @@
   gap: 18px;
   padding: 18px 24px;
   background: #F8FAFC;
-  border-radius: 7px;
+  border-radius: 5px;
   opacity: 0.4;
 }
 
@@ -411,7 +411,7 @@
 .templateCard {
   background: white;
   padding: 28px;
-  border-radius: 7px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -430,7 +430,7 @@
   height: 52px;
   background: rgba(0,98,102,0.08);
   color: #006266;
-  border-radius: 7px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -462,14 +462,14 @@
   color: #006266;
   background: rgba(0,98,102,0.08);
   padding: 4px 12px;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 .tplBtn {
   background: #006266;
   color: white;
   padding: 14px 28px;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1.5px;
