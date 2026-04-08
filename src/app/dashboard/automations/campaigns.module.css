@@ -14,7 +14,7 @@
 .titleInfo p {
   font-size: 8px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
   margin-top: 5px;
 }
@@ -40,7 +40,7 @@
 .statInfo p {
   font-size: 8px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1.5px;
   margin-bottom: 5px;
 }
@@ -87,7 +87,7 @@
   font-size: 9px;
   font-weight: 900;
   letter-spacing: 1.5px;
-  color: #718093;
+  color: #535c68;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -128,7 +128,7 @@
 .listHeader p {
   font-size: 9px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1.5px;
 }
 
@@ -201,7 +201,7 @@
 
 .desc {
   font-size: 13px;
-  color: #718093;
+  color: #535c68;
   font-weight: 500;
   margin-bottom: 10px;
 }

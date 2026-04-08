@@ -20,7 +20,7 @@
 .titleInfo p {
   font-size: 8px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
   margin-top: 5px;
 }
@@ -61,7 +61,7 @@
 .statInfo p {
   font-size: 10px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
@@ -159,7 +159,7 @@
   padding: 20px;
   font-size: 9px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
 }
 
@@ -169,10 +169,10 @@
   color: #2f3640;
 }
 
-.id { font-weight: 500; color: #718093 !important; }
+.id { font-weight: 500; color: #535c68 !important; }
 .patient { font-weight: 900; }
 .val { font-weight: 900; }
-.date { font-weight: 500; color: #718093; }
+.date { font-weight: 500; color: #535c68; }
 
 .statusBadge {
   padding: 6px 14px;
@@ -210,7 +210,7 @@
 .planHeader h3 {
   font-size: 8px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
 }
 
@@ -256,7 +256,7 @@
 .planStatItem p {
   font-size: 8px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
@@ -320,7 +320,7 @@
 .historyInfo p {
   font-size: 9px;
   font-weight: 500;
-  color: #718093;
+  color: #535c68;
   margin-top: 4px;
 }
 

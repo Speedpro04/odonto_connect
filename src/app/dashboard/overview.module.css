@@ -110,7 +110,7 @@
 .statLabel {
   font-size: 11px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1.5px;
   margin-bottom: 5px;
 }
@@ -125,7 +125,7 @@
 .statSub {
   font-size: 10px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1px;
   margin-top: 6px;
 }
@@ -216,7 +216,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #718093;
+  color: #535c68;
 }
 
 .timeInfo span {
@@ -234,7 +234,7 @@
 .cardBody p {
   font-size: 13px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1px;
 }
 
@@ -251,7 +251,7 @@
   width: 32px;
   height: 32px;
   background: #F8FAFC;
-  color: #718093;
+  color: #535c68;
   border-radius: 10px;
   display: flex;
   align-items: center;

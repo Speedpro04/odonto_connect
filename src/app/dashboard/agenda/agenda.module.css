@@ -20,7 +20,7 @@
 .titleInfo p {
   font-size: 8px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
   margin-top: 5px;
 }
@@ -65,7 +65,7 @@
 .filterGroup span {
   font-size: 9px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1.5px;
 }
 
@@ -87,7 +87,7 @@
   width: 44px;
   height: 44px;
   background: white;
-  color: #718093;
+  color: #535c68;
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@
 .cardInfo p {
   font-size: 10px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
 }
 
@@ -196,7 +196,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #718093;
+  color: #535c68;
   font-size: 11px;
   font-weight: 800;
 }
@@ -213,7 +213,7 @@
   border-radius: 12px;
   font-size: 9px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1.5px;
   border: 1px solid rgba(0, 0, 0, 0.02);
 }
@@ -239,7 +239,7 @@
 .slotInfo p {
   font-size: 8px;
   font-weight: 800;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 1px;
   margin-top: 4px;
 }
@@ -250,7 +250,7 @@
   border-radius: 12px;
   font-size: 8px;
   font-weight: 900;
-  color: #718093;
+  color: #535c68;
   letter-spacing: 2px;
   transition: all 0.3s;
 }
