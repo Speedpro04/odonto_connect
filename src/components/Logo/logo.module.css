@@ -1,0 +1,65 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  width: 76px;
+  height: 76px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.sun {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 159, 67, 0.5);
+}
+
+.waves {
+  width: 56px;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: -6px;
+}
+
+.wave {
+  width: 100%;
+  height: 2.5px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+.text h1 {
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.text h1 span {
+  font-weight: 900;
+}
+
+.text p {
+  font-size: 8px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.collapsed {
+  justify-content: center;
+}

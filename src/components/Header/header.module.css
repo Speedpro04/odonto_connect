@@ -1,0 +1,154 @@
+.header {
+  height: 100px;
+  background: rgba(0, 98, 102, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.titleSection h1 {
+  font-size: 27px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.titleSection p {
+  font-size: 11px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.badge {
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #2ed573;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.badge span {
+  font-size: 12px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.timer {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 7px;
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchBox svg {
+  position: absolute;
+  left: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.searchBox input {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 7px;
+  padding: 10px 15px 10px 45px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+  outline: none;
+  width: 200px;
+  transition: all 0.3s;
+}
+
+.searchBox input::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
+.searchBox input:focus {
+  background: rgba(255,255,255,0.2);
+  width: 280px;
+}
+
+.solaraBtn {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 24px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: transform 0.3s;
+}
+
+.solaraBtn:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+}
+
+.userBadge {
+  width: 44px;
+  height: 44px;
+  background: #7ed6df;
+  color: #006266;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 16px;
+  border: 3px solid rgba(255,255,255,0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
