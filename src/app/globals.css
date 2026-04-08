@@ -11,9 +11,9 @@
   --glass-bg: rgba(255, 255, 255, 0.6);
   --glass-border: rgba(255, 255, 255, 0.8);
   --shadow-premium: 0 20px 40px -15px rgba(0, 98, 102, 0.15);
-  --radius-default: 5px;
-  --radius-xl: 5px;
-  --radius-2xl: 5px;
+  --radius-default: 3px;
+  --radius-xl: 3px;
+  --radius-2xl: 3px;
 }
 
 * {

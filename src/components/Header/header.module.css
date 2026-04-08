@@ -24,7 +24,7 @@
 .titleSection p {
   font-size: 11px;
   font-weight: 800;
-  color: #718093;
+  color: #353b48;
   letter-spacing: 2px;
   margin-top: 8px;
 }
@@ -38,7 +38,7 @@
 .badge {
   background: rgba(255,255,255,0.1);
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -70,7 +70,7 @@
   background: rgba(255,255,255,0.15);
   color: white;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 3px;
   font-family: monospace;
   font-size: 13px;
   font-weight: 600;
@@ -92,13 +92,13 @@
 .searchBox svg {
   position: absolute;
   left: 15px;
-  color: #718093;
+  color: #353b48;
 }
 
 .searchBox input {
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 10px 15px 10px 45px;
   font-size: 14px;
   font-weight: 800;
@@ -110,7 +110,7 @@
 }
 
 .searchBox input::placeholder {
-  color: #718093;
+  color: #353b48;
 }
 
 .searchBox input:focus {
@@ -123,7 +123,7 @@
   color: white;
   border: 1px solid rgba(255,255,255,0.2);
   padding: 12px 24px;
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -143,7 +143,7 @@
   height: 44px;
   background: #7ed6df;
   color: #006266;
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
