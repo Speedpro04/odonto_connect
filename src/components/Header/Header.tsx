@@ -4,7 +4,11 @@ import React from 'react';
 import { Sparkles, Bell, Search, Settings } from 'lucide-react';
 import styles from './header.module.css';
 
-export default function Header() {
+interface HeaderProps {
+  onOpenChat?: () => void;
+}
+
+export default function Header({ onOpenChat }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
@@ -28,7 +32,7 @@ export default function Header() {
           <input type="text" placeholder="BUSCAR..." />
         </div>
         
-        <button className={styles.solaraBtn}>
+        <button className={styles.solaraBtn} onClick={onOpenChat}>
           <Sparkles size={16} />
           <span>SOLARA AI</span>
         </button>
