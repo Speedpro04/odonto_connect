@@ -44,7 +44,7 @@
   align-items: center;
   gap: 20px;
   padding: 18px 25px;
-  border-radius: 3px;
+  border-radius: 10px;
   color: #353b48;
   font-size: 14px;
   font-weight: 800;
@@ -88,7 +88,7 @@
 .userModule {
   background: rgba(255, 255, 255, 0.08);
   padding: 15px;
-  border-radius: 3px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -100,7 +100,7 @@
   height: 40px;
   background: linear-gradient(135deg, #7ed6df, #22a6b3);
   color: #2f3640;
-  border-radius: 3px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
