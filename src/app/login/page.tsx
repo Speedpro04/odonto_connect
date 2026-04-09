@@ -53,8 +53,8 @@ export default function LoginPage() {
         </div>
 
         <div className={styles.headerText}>
-          <h2>ASSISTENTE SOLARA</h2>
-          <p>GESTÃO INTELIGENTE PARA CLÍNICAS</p>
+          <h2>SOLARA CONNECT</h2>
+          <p>GESTÃO INTELIGENTE PARA CLÍNICAS ODONTOLÓGICAS</p>
         </div>
 
         <form className={styles.form} onSubmit={handleSubmit}>

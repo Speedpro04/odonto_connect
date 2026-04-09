@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { 
   LayoutDashboard, 
   Calendar, 
@@ -22,6 +22,7 @@ import styles from './sidebar.module.css';
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const router = useRouter();
 
   const menuItems = [
     { id: 'dashboard', icon: LayoutDashboard, label: 'PAINEL', path: '/dashboard' },
@@ -66,7 +67,7 @@ export default function Sidebar() {
             <span>SUPER ADMIN</span>
           </div>
         </div>
-        <button className={styles.logoutBtn}>
+        <button className={styles.logoutBtn} onClick={() => router.push('/login')}>
           <LogOut size={18} />
           <span>ENCERRAR SESSÃO</span>
         </button>
