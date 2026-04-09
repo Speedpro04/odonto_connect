@@ -14,10 +14,10 @@ export default function LandingPage() {
           <img src="/solara-logo.png" alt="Solara Connect Logo" className={styles.customLogo} />
         </div>
         <div className={styles.navLinks}>
-          <a href="#problema">O PROBLEMA</a>
           <a href="#solucao">SOLUÇÃO</a>
-          <a href="#como-funciona">COMO FUNCIONA</a>
+          <a href="#precos">PLANOS</a>
           <a href="#resultados">RESULTADOS</a>
+          <a href="#faq">FAQ</a>
         </div>
         <Link href="/login" className={styles.navBtn}>
           ACESSAR O SISTEMA
@@ -31,33 +31,32 @@ export default function LandingPage() {
             <Sparkles size={14} />
             <span>INTELIGÊNCIA ARTIFICIAL PARA ODONTOLOGIA</span>
           </div>
-          <h1>Recupere pacientes que <span>abandonaram tratamentos</span> com inteligência artificial.</h1>
-          <p>O Assistente Solara identifica automaticamente pacientes que não retornaram à clínica e inicia campanhas inteligentes para trazer esses pacientes de volta.</p>
+          <h1>A Inteligência Artificial que recupera pacientes para sua <span>clínica odontológica</span>.</h1>
+          <p>O Assistente Solara identifica automaticamente pacientes odontológicos ausentes e inicia campanhas inteligentes de retorno, otimizando a agenda e o faturamento do seu consultório.</p>
           
           <ul className={styles.featureList}>
-            <li><CheckCircle2 size={18} /> Identificação automática de pacientes em risco</li>
-            <li><CheckCircle2 size={18} /> Campanhas inteligentes de recuperação</li>
-            <li><CheckCircle2 size={18} /> Convites automáticos via WhatsApp</li>
-            <li><CheckCircle2 size={18} /> Mais pacientes retornando para a clínica</li>
+            <li><CheckCircle2 size={18} /> Identificação de risco automática</li>
+            <li><CheckCircle2 size={18} /> Campanhas de recuperação via WhatsApp</li>
+            <li><CheckCircle2 size={18} /> Gestão centralizada de retornos</li>
           </ul>
 
           <div className={styles.heroActions}>
             <Link href="/login" className={styles.primaryBtn}>
-              ACESSAR O SISTEMA
+              COMEÇAR AGORA
             </Link>
             <button className={styles.secondaryBtn}>
-              VER COMO FUNCIONA —
+              VER DEMONSTRAÇÃO
             </button>
           </div>
         </div>
         
         <div className={styles.heroImage}>
-          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2070&auto=format&fit=crop" alt="Dentista trabalhando" />
+          <img src="/hero-ai.png" alt="Solara IA Illustration" />
           <div className={styles.floatingStat}>
             <div className={styles.statIcon}><Activity size={20} /></div>
             <div>
               <strong>+28%</strong>
-              <p>TAXA DE RECUPERAÇÃO</p>
+              <p>RECUPERAÇÃO</p>
             </div>
           </div>
         </div>
@@ -67,49 +66,124 @@ export default function LandingPage() {
       <section className={styles.showcase} id="solucao">
         <div className={styles.sectionHeader}>
           <div className={styles.sectionBadge}>DEMONSTRAÇÃO</div>
-          <h2>Veja o Assistente Solara em ação.</h2>
-          <p>Interface limpa e intuitiva com tudo o que sua clínica precisa para recuperar pacientes automaticamente.</p>
+          <h2>Gestão inteligente para dentistas.</h2>
+          <p>Tudo o que sua clínica odontológica precisa para automatizar o relacionamento e garantir que nenhum paciente fique sem retorno.</p>
         </div>
 
         <div className={styles.showcaseGrid}>
           <div className={styles.showcaseCard}>
-            <img src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" alt="Painel de Recuperação" />
+            <img src="/showcase-1.png" alt="Painel de Recuperação" />
             <div className={styles.cardInfo}>
               <h3>Painel de Recuperação</h3>
-              <p>Visualize todos os pacientes prioritários, score de risco da IA, histórico de contatos e sugestões automáticas.</p>
+              <p>Visualize todos os pacientes prioritários, score de risco da IA e sugestões automáticas.</p>
             </div>
           </div>
           
           <div className={styles.showcaseCard}>
-            <img src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" alt="Campanhas Inteligentes" />
+            <img src="/showcase-1.png" alt="Campanhas Inteligentes" />
             <div className={styles.cardInfo}>
-              <h3>Campanhas Inteligentes</h3>
-              <p>Execute campanhas sugeridas pela IA em poucos cliques. Acompanhe o progresso e os resultados em tempo real.</p>
+              <h3>Campanhas Automáticas</h3>
+              <p>Execute campanhas sugeridas pela IA com disparos diretos via WhatsApp em poucos cliques.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 3: Feature Detail */}
-      <section className={styles.featureDetail}>
-        <div className={styles.detailText}>
-          <div className={styles.sectionBadge}>INTELIGÊNCIA IA</div>
-          <h2>Uma IA especializada em recuperação de pacientes.</h2>
-          <p>O sistema utiliza inteligência artificial para identificar padrões de abandono de tratamento e sugerir ações que aumentam significativamente a chance de retorno dos pacientes. Resultados claros, em tempo real.</p>
-          
-          <ul className={styles.detailList}>
-            <li><div className={styles.dot}></div> Taxa de abandono monitorada automaticamente</li>
-            <li><div className={styles.dot}></div> Pacientes em risco identificados por IA</li>
-            <li><div className={styles.dot}></div> Convites enviados e rastreados em tempo real</li>
-            <li><div className={styles.dot}></div> Pacientes recuperados contabilizados</li>
-            <li><div className={styles.dot}></div> Faturamento recuperado calculado automaticamente</li>
-          </ul>
+      {/* Section 3: Pricing */}
+      <section className={styles.pricing} id="precos">
+        <div className={styles.sectionHeader}>
+          <div className={styles.sectionBadge}>PREÇOS</div>
+          <h2>Escolha o plano ideal para sua clínica.</h2>
         </div>
 
-        <div className={styles.detailImage}>
-          <img src="https://images.unsplash.com/photo-1576091160550-217359f49f4c?q=80&w=2070&auto=format&fit=crop" alt="IA em Odontologia" />
+        <div className={styles.pricingGrid}>
+          {[
+            { name: 'ESSENCIAL', price: '297', features: ['Até 500 pacientes', 'IA de Recuperação', 'Otimização de Agenda', 'Suporte e-mail'], color: 'blue' },
+            { name: 'PROFISSIONAL', price: '497', features: ['Até 2.000 pacientes', 'Solara IA Avançada', 'WhatsApp Odonto Ilimitado', 'Suporte Prioritário'], hot: true, color: 'teal' },
+            { name: 'ELITE', price: '997', features: ['Pacientes Ilimitados', 'Multiclínicas / Redes', 'Gestor de Contas', 'Integração Customizada'], color: 'charcoal' }
+          ].map((plan, i) => (
+            <div key={i} className={`${styles.pricingCard} ${plan.hot ? styles.hotPlan : ''}`}>
+              {plan.hot && <span className={styles.hotBadge}>MAIS POPULAR</span>}
+              <h3>{plan.name}</h3>
+              <div className={styles.price}>
+                <span>R$</span> <strong>{plan.price}</strong> <small>/mês</small>
+              </div>
+              <ul className={styles.planFeatures}>
+                {plan.features.map((f, j) => <li key={j}><CheckCircle2 size={16} /> {f}</li>)}
+              </ul>
+              <button className={styles.planBtn}>ASSINAR PLANO</button>
+            </div>
+          ))}
         </div>
       </section>
+
+      {/* Section 4: Testimonials */}
+      <section className={styles.testimonials} id="resultados">
+        <div className={styles.sectionHeader}>
+          <div className={styles.sectionBadge}>DEPOIMENTOS</div>
+          <h2>O que dizem os donos de clínicas.</h2>
+        </div>
+        <div className={styles.testimonialsGrid}>
+          {[
+            { name: 'Dr. Roberto Silva', role: 'Clínica Sorriso Real', text: 'A Solara recuperou mais de 40 pacientes no primeiro mês. O ROI foi imediato.' },
+            { name: 'Dra. Ana Paula', role: 'Odonto Clean', text: 'O processo de automação via WhatsApp é impecável. Economizamos horas de recepção.' },
+            { name: 'Dr. Carlos Lima', role: 'Lima Odontologia', text: 'A interface é muito intuitiva. Meus assistentes adoram usar o sistema.' }
+          ].map((t, i) => (
+            <div key={i} className={styles.testimonialCard}>
+              <div className={styles.testimonialStars}>★★★★★</div>
+              <p>"{t.text}"</p>
+              <div className={styles.testimonialAuthor}>
+                <strong>{t.name}</strong>
+                <span>{t.role}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 5: FAQ */}
+      <section className={styles.faq} id="faq">
+        <div className={styles.sectionHeader}>
+          <div className={styles.sectionBadge}>FAQ</div>
+          <h2>Dúvidas frequentes.</h2>
+        </div>
+        <div className={styles.faqGrid}>
+          {[
+            { q: 'Como a Solara identifica os pacientes?', a: 'Nossa IA analisa o histórico de consultas e tratamentos para identificar quem não retornou para a revisão ou limpeza.' },
+            { q: 'Preciso de um número de WhatsApp novo?', a: 'Não, você pode conectar o número oficial do seu consultório diretamente em nossa plataforma.' },
+            { q: 'É difícil de configurar?', a: 'Em menos de 10 minutos sua clínica odontológica já está pronta para recuperar os primeiros pacientes.' }
+          ].map((item, i) => (
+            <div key={i} className={styles.faqItem}>
+              <h4>{item.q}</h4>
+              <p>{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className={styles.footer}>
+        <div className={styles.footerGrid}>
+          <div className={styles.footerBrand}>
+            <img src="/solara-logo.png" alt="Solara" />
+            <p>Acelerando o crescimento de clínicas odontológicas através da inteligência artificial.</p>
+          </div>
+          <div className={styles.footerLinks}>
+            <h4>PRODUTO</h4>
+            <a href="#">Funcionalidades</a>
+            <a href="#">Planos</a>
+            <a href="#">Relatórios</a>
+          </div>
+          <div className={styles.footerLinks}>
+            <h4>LEGAL</h4>
+            <a href="/dashboard/privacy">Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+        <div className={styles.footerBottom}>
+          <p>© 2026 Solara Connect. Todos os direitos reservados.</p>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -29,10 +29,11 @@
 .statCard {
   background: white;
   padding: 30px;
-  border-radius: 32px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
+  border-left: 4px solid #2f3640;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
 
@@ -67,8 +68,9 @@
 /* Table Card */
 .tableCard {
   background: white;
-  border-radius: 40px;
+  border-radius: 10px;
   overflow: hidden;
+  border-left: 4px solid #2f3640;
   box-shadow: 0 40px 100px -20px rgba(10, 61, 98, 0.05);
 }
 
