@@ -1,11 +1,16 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import DashboardLayout from '@/components/DashboardLayout/DashboardLayout';
 import { Sparkles, Activity, Clock, Users, ArrowRight, Zap, TrendingUp, AlertCircle, MessageSquare, Trash2, X } from 'lucide-react';
 import styles from './overview.module.css';
 
 export default function DashboardOverview() {
+  const [isChatOpen, setIsChatOpen] = useState(true);
+  const [chatMessages, setChatMessages] = useState([
+    'Olá, sou Solara, sua assistente Inteligente. Como posso ajudar com a gestão da clínica hoje?'
+  ]);
+
   const stats = [
     { label: 'TAXA DE ABANDONO', value: '18.4%', sub: '2.1% VS MÊS ANTERIOR', color: 'orange' },
     { label: 'CONVITES ENVIADOS', value: '142', sub: 'ESTE MÊS VIA WHATSAPP', color: 'blue' },
@@ -102,28 +107,36 @@ export default function DashboardOverview() {
         </div>
 
         {/* Solara AI Floating Chat - Simplified UI for now */}
-        <div className={styles.aiChatContainer}>
-          <div className={styles.chatHeader}>
-            <div className={styles.chatHeaderInfo}>
-              <img src="/solara-logo.png" alt="Solara" className={styles.chatLogoImage} />
-              <div>
-                <strong>SOLARA</strong>
-                <span>INTELIGÊNCIA DE SUPORTE</span>
+        {isChatOpen && (
+          <div className={styles.aiChatContainer}>
+            <div className={styles.chatHeader}>
+              <div className={styles.chatHeaderInfo}>
+                <img src="/solara-logo.png" alt="Solara" className={styles.chatLogoImage} />
+                <div>
+                  <strong>SOLARA</strong>
+                  <span>INTELIGÊNCIA DE SUPORTE</span>
+                </div>
+              </div>
+              <div className={styles.chatActions}>
+                <button className={styles.actionBtn} title="Limpar Conversa" onClick={() => setChatMessages([])}><Trash2 size={14} /></button>
+                <button className={styles.actionBtn} title="Fechar Mensagens" onClick={() => setIsChatOpen(false)}><X size={14} /></button>
               </div>
             </div>
-            <div className={styles.chatActions}>
-              <button className={styles.actionBtn} title="Limpar Conversa"><Trash2 size={14} /></button>
-              <button className={styles.actionBtn} title="Fechar Mensagens"><X size={14} /></button>
+            <div className={styles.chatBody}>
+              {chatMessages.length > 0 ? (
+                chatMessages.map((msg, index) => (
+                  <p key={index}>{msg}</p>
+                ))
+              ) : (
+                <div style={{ textAlign: 'center', opacity: 0.5, marginTop: '20px', fontSize: '13px', fontWeight: 600 }}>Nenhuma mensagem.</div>
+              )}
+            </div>
+            <div className={styles.chatInput}>
+              <input type="text" placeholder="Aguardando comando..." />
+              <div className={styles.sendIcon}><Zap size={14} /></div>
             </div>
           </div>
-          <div className={styles.chatBody}>
-            <p>Olá, sou Solara, sua assistente Inteligente. Como posso ajudar com a gestão da clínica hoje?</p>
-          </div>
-          <div className={styles.chatInput}>
-            <input type="text" placeholder="Aguardando comando..." />
-            <div className={styles.sendIcon}><Zap size={14} /></div>
-          </div>
-        </div>
+        )}
       </div>
     </DashboardLayout>
   );
