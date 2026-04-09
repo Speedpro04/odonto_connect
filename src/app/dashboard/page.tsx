@@ -2,7 +2,7 @@
 
 import React from 'react';
 import DashboardLayout from '@/components/DashboardLayout/DashboardLayout';
-import { Sparkles, Activity, Clock, Users, ArrowRight, Zap, TrendingUp, AlertCircle, MessageSquare } from 'lucide-react';
+import { Sparkles, Activity, Clock, Users, ArrowRight, Zap, TrendingUp, AlertCircle, MessageSquare, Trash2, X } from 'lucide-react';
 import styles from './overview.module.css';
 
 export default function DashboardOverview() {
@@ -104,10 +104,16 @@ export default function DashboardOverview() {
         {/* Solara AI Floating Chat - Simplified UI for now */}
         <div className={styles.aiChatContainer}>
           <div className={styles.chatHeader}>
-            <div className={styles.chatLogo}></div>
-            <div>
-              <strong>SOLARA</strong>
-              <span>INTELIGÊNCIA DE SUPORTE</span>
+            <div className={styles.chatHeaderInfo}>
+              <img src="/solara-logo.png" alt="Solara" className={styles.chatLogoImage} />
+              <div>
+                <strong>SOLARA</strong>
+                <span>INTELIGÊNCIA DE SUPORTE</span>
+              </div>
+            </div>
+            <div className={styles.chatActions}>
+              <button className={styles.actionBtn} title="Limpar Conversa"><Trash2 size={14} /></button>
+              <button className={styles.actionBtn} title="Fechar Mensagens"><X size={14} /></button>
             </div>
           </div>
           <div className={styles.chatBody}>
