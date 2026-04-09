@@ -353,3 +353,10 @@
   border-radius: 40px;
   box-shadow: 0 40px 100px -20px rgba(10, 61, 98, 0.2);
 }
+
+.customLogo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transform: translateY(-12px);
+}

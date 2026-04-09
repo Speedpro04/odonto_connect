@@ -202,3 +202,10 @@
   font-weight: 800;
   letter-spacing: 2px;
 }
+
+.customLogo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transform: translateY(-12px);
+}

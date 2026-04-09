@@ -11,11 +11,7 @@ export default function LandingPage() {
       {/* Navbar */}
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <div className={styles.logoIcon}></div>
-          <div className={styles.logoText}>
-            <h1>ASSISTENTE <span>SOLARA</span></h1>
-            <p>IA DE RECUPERAÇÃO</p>
-          </div>
+          <img src="/solara-logo.png" alt="Solara Connect Logo" className={styles.customLogo} />
         </div>
         <div className={styles.navLinks}>
           <a href="#problema">O PROBLEMA</a>

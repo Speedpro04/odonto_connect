@@ -12,17 +12,7 @@ export default function LoginPage() {
       <div className={styles.loginCard}>
         {/* Logo Section */}
         <div className={styles.logoContainer}>
-          <div className={styles.logoIcon}>
-            <div className={styles.sun}></div>
-            <div className={styles.waves}>
-              <div className={styles.wave}></div>
-              <div className={styles.wave}></div>
-            </div>
-          </div>
-          <div className={styles.logoText}>
-            <h1>ASSISTENTE <span>SOLARA</span></h1>
-            <p>IA DE RECUPERAÇÃO</p>
-          </div>
+          <img src="/solara-logo.png" alt="Solara Connect Logo" className={styles.customLogo} />
         </div>
 
         <div className={styles.headerText}>
