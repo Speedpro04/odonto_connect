@@ -67,9 +67,9 @@
 }
 
 .active {
-  background: #ff7675;
+  background: #16a085;
   color: white !important;
-  box-shadow: 0 10px 20px rgba(255, 118, 117, 0.3);
+  box-shadow: 0 10px 20px rgba(22, 160, 133, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
