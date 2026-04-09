@@ -10,13 +10,11 @@ interface LogoProps {
 export default function Logo({ collapsed }: LogoProps) {
   return (
     <div className={`${styles.logo} ${collapsed ? styles.collapsed : ''}`}>
-      <div className={styles.icon}>
-        <div className={styles.sun}></div>
-        <div className={styles.waves}>
-          <div className={styles.wave}></div>
-          <div className={styles.wave}></div>
-        </div>
-      </div>
+      <img
+        src="/solara-logo.png"
+        alt="Solara Connect Logo"
+        className={styles.customLogo}
+      />
     </div>
   );
 }
