@@ -13,10 +13,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <div className={styles.container}>
       <Sidebar />
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} custom-scrollbar`}>
         <Header />
         <main className={styles.content}>
-          <div className="animate-fade-in custom-scrollbar">
+          <div className="animate-fade-in">
             {children}
           </div>
         </main>
