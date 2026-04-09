@@ -17,12 +17,6 @@ export default function Logo({ collapsed }: LogoProps) {
           <div className={styles.wave}></div>
         </div>
       </div>
-      {!collapsed && (
-        <div className={styles.text}>
-          <h1>SOLARA <span>CONNECT</span></h1>
-          <p>IA DE RECUPERAÇÃO</p>
-        </div>
-      )}
     </div>
   );
 }
