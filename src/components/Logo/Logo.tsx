@@ -10,11 +10,13 @@ interface LogoProps {
 export default function Logo({ collapsed }: LogoProps) {
   return (
     <div className={`${styles.logo} ${collapsed ? styles.collapsed : ''}`}>
-      <img
-        src="/solara-logo.png"
-        alt="Solara Connect Logo"
-        className={styles.customLogo}
-      />
-    </div>
+        <div className={styles.logoContainer}>
+          <div className="logoWrapper">
+            <img src="/solara-logo.png" alt="Solara Odonto Logo" className={styles.customLogo} />
+            <span className="signatureText" style={{ color: '#006266', marginTop: '5px' }}>Solara Odonto</span>
+          </div>
+        </div>
+        {!collapsed && <span className="signatureText" style={{ color: 'white', marginTop: '-15px' }}>Solara Odonto</span>}
+      </div>
   );
 }

@@ -7,10 +7,7 @@
 
 /* Navbar */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 80px;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -20,10 +17,22 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.logo {
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.navbar .inner {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+}
+
+.customLogo {
+  width: 90px;
+  height: auto;
 }
 
 .logoIcon {
@@ -87,9 +96,12 @@
 
 /* Hero Section */
 .hero {
+  padding: 100px 0;
+}
+
+.hero .inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 100px 80px;
   align-items: center;
   gap: 80px;
 }
@@ -186,6 +198,21 @@
   position: relative;
 }
 
+.imageTag {
+  position: absolute;
+  top: -35px;
+  right: 20px;
+  background: #ff9f43;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 20px rgba(255, 159, 67, 0.3);
+  z-index: 10;
+}
+
 .heroImage img {
   width: 100%;
   border-radius: 40px;
@@ -234,7 +261,7 @@
 /* Showcase Section */
 .showcase {
   background: #F8FAFC;
-  padding: 140px 80px;
+  padding: 140px 0;
   color: #2f3640;
 }
 
@@ -247,9 +274,9 @@
   display: inline-block;
   background: #ff9f43;
   color: white;
-  padding: 6px 14px;
+  padding: 8px 20px;
   border-radius: 8px;
-  font-size: 8px;
+  font-size: 24px;
   font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -303,7 +330,7 @@
 
 /* Pricing Section */
 .pricing {
-  padding: 140px 80px;
+  padding: 140px 0;
   background: white;
   color: #2f3640;
 }
@@ -312,18 +339,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 .pricingCard {
-  background: #F8FAFC;
+  background: #01a3a4;
+  color: white;
   padding: 50px 40px;
   border-radius: 24px;
   text-align: center;
   position: relative;
   transition: all 0.3s;
-  border: 1px solid rgba(0,0,0,0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hotPlan {
@@ -365,7 +393,7 @@
 
 .price span { font-size: 18px; font-weight: 600; margin-right: 5px; }
 .price strong { font-size: 56px; font-weight: 900; letter-spacing: -2px; }
-.price small { font-size: 14px; font-weight: 600; opacity: 0.6; }
+.price small { font-size: 14px; font-weight: 600; opacity: 0.8; }
 
 .planFeatures {
   list-style: none;
@@ -410,7 +438,7 @@
 
 /* Testimonials Section */
 .testimonials {
-  padding: 100px 80px;
+  padding: 100px 0;
   background: white;
   color: #2f3640;
 }
@@ -419,13 +447,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 .testimonialCard {
   background: #F8FAFC;
-  padding: 40px;
+  padding: 52px;
   border-radius: 24px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.02);
   transition: all 0.3s;
@@ -466,7 +494,7 @@
 
 /* FAQ Section */
 .faq {
-  padding: 100px 80px 140px;
+  padding: 100px 0 140px;
   background: #F8FAFC;
   color: #2f3640;
 }
@@ -502,7 +530,7 @@
 
 /* Footer */
 .footer {
-  padding: 100px 80px 40px;
+  padding: 100px 0 40px;
   background: #0a3d62;
   color: white;
 }
@@ -511,16 +539,14 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 100px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding-bottom: 60px;
 }
 
 .footerBrand img {
-  width: 140px;
+  width: 90px;
   margin-bottom: 25px;
-  filter: brightness(0) invert(1);
 }
 
 .footerBrand p {

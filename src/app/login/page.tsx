@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Mail, Lock, Eye, EyeOff, ShieldCheck, Sparkles } from 'lucide-react';
 import styles from './login.module.css';
 
@@ -12,7 +13,10 @@ export default function LoginPage() {
       <div className={styles.loginCard}>
         {/* Logo Section */}
         <div className={styles.logoContainer}>
-          <img src="/solara-logo.png" alt="Solara Connect Logo" className={styles.customLogo} />
+          <div className="logoWrapper">
+            <img src="/solara-logo.png" alt="Solara Odonto Logo" className={styles.customLogo} />
+            <span className="signatureText" style={{ color: '#006266' }}>Solara Odonto</span>
+          </div>
         </div>
 
         <div className={styles.headerText}>
@@ -47,6 +51,16 @@ export default function LoginPage() {
           <button type="submit" className={styles.submitButton}>
             ENTRAR NO SISTEMA
           </button>
+
+          <div className={styles.extraLinks}>
+            <Link href="/forgot-password" className={styles.link}>
+              Esqueci minha senha
+            </Link>
+            <div className={styles.divider}></div>
+            <Link href="/register" className={styles.link}>
+              Criar nova conta
+            </Link>
+          </div>
         </form>
 
         <div className={styles.footer}>
