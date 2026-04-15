@@ -9,7 +9,7 @@ export default function PrivacyPage() {
     <DashboardLayout>
       <div style={{ padding: '40px', background: 'white', borderRadius: '10px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
-          <div style={{ width: '50px', height: '50px', background: 'rgba(0, 98, 102, 0.1)', color: '#006266', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyCenter: 'center', display: 'flex', justifyContent: 'center' }}>
+          <div style={{ width: '50px', height: '50px', background: 'rgba(0, 98, 102, 0.1)', color: '#006266', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <ShieldCheck size={24} />
           </div>
           <div>

@@ -201,7 +201,7 @@ export default function LandingPage() {
               { name: 'É difícil de configurar?', a: 'Em menos de 10 minutos o Solara Connect já está pronto para recuperar seus pacientes.' }
             ].map((item, i) => (
               <div key={i} className={styles.faqItem}>
-                <h4>{item.q}</h4>
+                <h4>{item.name}</h4>
                 <p>{item.a}</p>
               </div>
             ))}

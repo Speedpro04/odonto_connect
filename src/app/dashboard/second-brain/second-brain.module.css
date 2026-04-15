@@ -1,0 +1,118 @@
+.container {
+  padding: 24px;
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: 280px 1fr 300px;
+  gap: 20px;
+  background: #f8fafc;
+}
+
+.sidebar {
+  background: white;
+  border-radius: 17px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainContent {
+  background: white;
+  border-radius: 17px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.graphContainer {
+  background: white;
+  border-radius: 17px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.noteItem {
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.noteItem:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.activeNote {
+  background: #e2e8f0;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.editorTitle {
+  font-size: 28px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #1e293b;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badgePolars {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badgeObsidian {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.graphPlaceholder {
+  flex: 1;
+  background: #f8fafc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #e2e8f0;
+}
+
+/* Custom SimpleMDE / EasyMDE styling to look like Obsidian */
+:global(.CodeMirror) {
+  border: none !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+:global(.editor-toolbar) {
+  border: none !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  opacity: 0.6;
+}
+
+:global(.editor-toolbar:hover) {
+  opacity: 1;
+}

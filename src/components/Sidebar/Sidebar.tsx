@@ -31,6 +31,7 @@ export default function Sidebar() {
     { id: 'campaign', icon: Zap, label: 'CAMPANHA AUTO.', path: '/dashboard/campaign' },
     { id: 'specialists', icon: Stethoscope, label: 'ESPECIALISTAS', path: '/dashboard/specialists' },
     { id: 'reports', icon: TrendingUp, label: 'RELATÓRIOS', path: '/dashboard/reports' },
+    { id: 'second-brain', icon: BrainCircuit, label: 'SECOND BRAIN', path: '/dashboard/second-brain' },
     { id: 'automations', icon: Zap, label: 'AUTOMAÇÕES', path: '/dashboard/automations' },
     { id: 'finance', icon: DollarSign, label: 'FINANCEIRO', path: '/dashboard/finance' },
     { id: 'privacy', icon: ShieldCheck, label: 'PRIVACIDADE', path: '/dashboard/privacy' },

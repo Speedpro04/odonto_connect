@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  devIndicators: {
-    buildActivity: false,
-    appIsrStatus: false,
-  },
+  serverExternalPackages: ['nodejs-polars'],
 };
 
 export default nextConfig;
