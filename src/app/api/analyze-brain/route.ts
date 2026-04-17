@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+export const dynamic = 'force-dynamic';
 import { PolarsEngine } from '@/lib/polars-engine';
 import { BrainService } from '@/lib/brain-service';
 
