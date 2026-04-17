@@ -1,8 +1,7 @@
-import pl from 'nodejs-polars';
-
 /**
- * Motor de Inteligência Polars para o Solara Connect
- * Responsável por processamento de dados ultra-rápido de leads, pacientes e financeiro.
+ * Motor de Inteligência para o Solara Connect
+ * Processamento de dados de leads, pacientes e financeiro.
+ * (Implementação leve sem dependência nativa nodejs-polars)
  */
 export class PolarsEngine {
   /**
@@ -12,49 +11,67 @@ export class PolarsEngine {
   static analyzeLeads(leads: any[]) {
     if (!leads.length) return null;
 
-    // Converte para DataFrame do Polars
-    const df = pl.readRecords(leads);
+    // Agrupa por status e calcula estatísticas
+    const grouped: Record<string, { total: number; scores: number[] }> = {};
 
-    // Exemplo de agregação ultra-rápida (coisa que o JS puro demoraria em sets grandes)
-    const stats = df
-      .groupBy("status")
-      .agg(
-        pl.count("id").alias("total"),
-        pl.avg("score").alias("media_pontuacao")
-      )
-      .sort("total", true);
+    for (const lead of leads) {
+      const status = lead.status || 'unknown';
+      if (!grouped[status]) {
+        grouped[status] = { total: 0, scores: [] };
+      }
+      grouped[status].total++;
+      if (lead.score !== undefined) {
+        grouped[status].scores.push(lead.score);
+      }
+    }
 
-    return stats.toRecords();
+    return Object.entries(grouped)
+      .map(([status, data]) => ({
+        status,
+        total: data.total,
+        media_pontuacao: data.scores.length
+          ? data.scores.reduce((a, b) => a + b, 0) / data.scores.length
+          : 0,
+      }))
+      .sort((a, b) => b.total - a.total);
   }
 
   /**
    * Identifica tendências de inadimplência ou cancelamento (Churn)
    */
   static detectChurnTrends(appointments: any[]) {
-    const df = pl.readRecords(appointments);
-    
-    // Lógica para detectar padrões de pacientes que faltam muito
-    const trends = df
-      .filter(pl.col("status").eq(pl.lit("faltou")))
-      .groupBy("paciente_id")
-      .agg(pl.count("id").alias("faltas"))
-      .filter(pl.col("faltas").gt(2));
+    // Filtra faltas e agrupa por paciente
+    const faltasPorPaciente: Record<string, number> = {};
 
-    return trends.toRecords();
+    for (const appt of appointments) {
+      if (appt.status === 'faltou') {
+        const pid = appt.paciente_id;
+        faltasPorPaciente[pid] = (faltasPorPaciente[pid] || 0) + 1;
+      }
+    }
+
+    return Object.entries(faltasPorPaciente)
+      .filter(([, faltas]) => faltas > 2)
+      .map(([paciente_id, faltas]) => ({ paciente_id, faltas }));
   }
 
   /**
-   * Prepara o contexto para a IA (Gemini) usando Polars para resumir os dados
+   * Prepara o contexto para a IA (Gemini) resumindo os dados
    */
   static prepareAIContext(history: any[]) {
-    const df = pl.readRecords(history);
-    
-    // Resume o histórico limitando a complexidade para o prompt
-    const summary = df
-      .sort("data", true)
-      .head(10)
-      .select(["data", "tipo", "resumo"]);
-      
-    return summary.toRecords();
+    // Ordena por data e pega os 10 mais recentes
+    const sorted = [...history]
+      .sort((a, b) => {
+        const dateA = new Date(a.data || 0).getTime();
+        const dateB = new Date(b.data || 0).getTime();
+        return dateB - dateA;
+      })
+      .slice(0, 10);
+
+    return sorted.map(item => ({
+      data: item.data,
+      tipo: item.tipo,
+      resumo: item.resumo,
+    }));
   }
 }
