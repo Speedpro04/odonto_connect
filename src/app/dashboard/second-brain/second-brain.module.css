@@ -100,19 +100,19 @@
 }
 
 /* Custom SimpleMDE / EasyMDE styling to look like Obsidian */
-:global(.CodeMirror) {
+.mainContent :global(.CodeMirror) {
   border: none !important;
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
   line-height: 1.6 !important;
 }
 
-:global(.editor-toolbar) {
+.mainContent :global(.editor-toolbar) {
   border: none !important;
   border-bottom: 1px solid #f1f5f9 !important;
   opacity: 0.6;
 }
 
-:global(.editor-toolbar:hover) {
+.mainContent :global(.editor-toolbar:hover) {
   opacity: 1;
 }
