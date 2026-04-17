@@ -14,6 +14,7 @@ import {
   Zap, 
   ShieldCheck,
   TrendingUp,
+  BrainCircuit,
   LogOut
 } from 'lucide-react';
 import Logo from '../Logo/Logo';
