@@ -123,7 +123,7 @@ export default function LandingPage() {
               <img src="/showcase-1.png" alt="Campanhas Inteligentes" />
               <div className={styles.cardInfo}>
                 <h3>Campanhas Automáticas</h3>
-                <p>Execute campanhas sugeridas pela IA com disparos diretos via WhatsApp em poucos cliques.</p>
+                <p>Execute campanhas sugeridas pela IA with disparos diretos via WhatsApp em poucos cliques.</p>
               </div>
             </div>
           </div>
