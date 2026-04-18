@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Mail, Lock, Eye, EyeOff, ShieldCheck } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import styles from './login.module.css';
+import Logo from '@/components/Logo/Logo';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -46,14 +47,13 @@ export default function LoginPage() {
       <div className={styles.loginCard}>
         {/* Logo Section */}
         <div className={styles.logoContainer}>
-          <div className="logoWrapper">
-            <img src="/solara-logo.png" alt="Solara Odonto Logo" className={styles.customLogo} />
-            <span className="signatureText" style={{ color: '#006266' }}>Solara Odonto</span>
+          <div className="flex justify-center w-full">
+            <Logo light={true} centered={true} />
           </div>
         </div>
 
-        <div className={styles.headerText}>
-          <h2>SOLARA CONNECT</h2>
+        <div className={styles.headerText} style={{ marginTop: '20px' }}>
+          <h2>ACESSO AO SISTEMA</h2>
           <p>GESTÃO INTELIGENTE PARA CLÍNICAS ODONTOLÓGICAS</p>
         </div>
 
@@ -66,7 +66,7 @@ export default function LoginPage() {
               <Mail size={18} className={styles.inputIcon} />
               <input 
                 type="email" 
-                placeholder="kd3online@gmail.com" 
+                placeholder="contato@clinica.com" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -118,4 +118,3 @@ export default function LoginPage() {
     </div>
   );
 }
-

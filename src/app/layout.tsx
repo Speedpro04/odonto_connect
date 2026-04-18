@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Assistente Solara | Gestão Inteligente para Clínicas",
   description: "IA especializada em recuperação de pacientes e gestão de clínicas odontológicas.",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({

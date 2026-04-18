@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Sparkles, Bell, Search, Settings } from 'lucide-react';
+import Logo, { PowerSun } from '../Logo/Logo';
 import styles from './header.module.css';
 
 interface HeaderProps {
@@ -32,9 +33,8 @@ export default function Header({ onOpenChat }: HeaderProps) {
           <input type="text" placeholder="BUSCAR..." />
         </div>
         
-        <button className={styles.solaraBtn} onClick={onOpenChat}>
-          <Sparkles size={16} />
-          <span>SOLARA AI</span>
+        <button className={styles.solaraBtn} onClick={onOpenChat} title="SOLARA AI">
+          <PowerSun size={32} />
         </button>
 
         <div className={styles.userBadge}>

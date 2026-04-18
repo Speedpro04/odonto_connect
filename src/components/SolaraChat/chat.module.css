@@ -73,20 +73,52 @@
 
 .chatBody {
   padding: 25px;
-  height: 350px;
-  max-height: 350px;
+  height: 410px;
+  max-height: 410px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.chatBody p {
-  background: #F8FAFC;
-  padding: 20px;
-  border-radius: 20px;
+/* Custom scrollbar for chatBody */
+.chatBody::-webkit-scrollbar {
+  width: 4px;
+}
+.chatBody::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chatBody::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.messageWrapper {
+  max-width: 85%;
+  padding: 14px 18px;
+  border-radius: 15px;
   font-size: 13px;
-  line-height: 1.6;
-  color: #2f3640;
+  line-height: 1.5;
   font-weight: 500;
-  border-bottom-left-radius: 4px;
+}
+
+.aiMsg {
+  align-self: flex-start;
+  background: #F1F2F6;
+  color: #2f3640;
+  border-bottom-left-radius: 2px;
+}
+
+.userMsg {
+  align-self: flex-end;
+  background: #006266;
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+.typing {
+  font-style: italic;
+  opacity: 0.7;
 }
 
 .chatInput {
@@ -101,21 +133,51 @@
 .chatInput input {
   flex: 1;
   background: #F8FAFC;
-  border: none;
+  border: 1px solid rgba(0,0,0,0.05);
   padding: 12px 20px;
   border-radius: 10px;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   outline: none;
+  transition: all 0.3s;
+}
+
+.chatInput input:focus {
+  background: white;
+  border-color: #ff9f43;
+  box-shadow: 0 0 0 4px rgba(255, 159, 67, 0.1);
 }
 
 .sendIcon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   background: #ff9f43;
   color: white;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.sendIcon:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 159, 67, 0.3);
+  background: #ee5253;
+}
+
+.sendIcon:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
 }
