@@ -14,8 +14,8 @@ export default function Header({ onOpenChat }: HeaderProps) {
     <header className={styles.header}>
       <div className={styles.left}>
         <div className={styles.titleSection}>
-          <h1>Solara Connect</h1>
-          <p>CLÍNICAS ODONTOLÓGICAS CONECTADAS EM TEMPO REAL</p>
+          <h1>Solara Estética</h1>
+          <p>GESTÃO INTELIGENTE PARA CLÍNICAS DE ESTÉTICA</p>
         </div>
       </div>
 

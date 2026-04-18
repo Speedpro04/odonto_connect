@@ -1,183 +1,182 @@
-/* Solara AI Floating Chat */
-.aiChatContainer {
+.chatWindow {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 340px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.3);
+  bottom: 100px;
+  right: 24px;
+  width: 420px;
+  height: 650px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 32px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   z-index: 1000;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.chatHeader {
-  background: #006266;
-  padding: 20px 25px;
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.header {
+  padding: 24px;
+  background: linear-gradient(135deg, #40407a 0%, #706fd3 100%);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.chatHeaderInfo {
+.headerInfo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
-.chatLogoImage {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-}
-
-.chatActions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.actionBtn {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.actionBtn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-}
-
-.chatHeader strong {
-  display: block;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 2px;
-}
-
-.chatHeader span {
-  font-size: 7px;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.4);
-  letter-spacing: 1px;
-}
-
-.chatBody {
-  padding: 25px;
-  height: 410px;
-  max-height: 410px;
+.messages {
+  flex: 1;
+  padding: 24px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
+  background: radial-gradient(circle at top right, rgba(112, 111, 211, 0.05), transparent);
 }
 
-/* Custom scrollbar for chatBody */
-.chatBody::-webkit-scrollbar {
+/* Custom scrollbar */
+.messages::-webkit-scrollbar {
   width: 4px;
 }
-.chatBody::-webkit-scrollbar-track {
+.messages::-webkit-scrollbar-track {
   background: transparent;
 }
-.chatBody::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.05);
+.messages::-webkit-scrollbar-thumb {
+  background: rgba(112, 111, 211, 0.2);
   border-radius: 10px;
 }
 
-.messageWrapper {
+.message {
   max-width: 85%;
   padding: 14px 18px;
-  border-radius: 15px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.assistantMessage {
+  align-self: flex-start;
+  background: white;
+  color: #1e293b;
+  border-radius: 4px 20px 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   font-weight: 500;
 }
 
-.aiMsg {
-  align-self: flex-start;
-  background: #F1F2F6;
-  color: #2f3640;
-  border-bottom-left-radius: 2px;
-}
-
-.userMsg {
+.userMessage {
   align-self: flex-end;
-  background: #006266;
+  background: #706fd3;
   color: white;
-  border-bottom-right-radius: 2px;
+  border-radius: 20px 20px 4px 20px;
+  box-shadow: 0 10px 15px -3px rgba(112, 111, 211, 0.3);
 }
 
-.typing {
-  font-style: italic;
-  opacity: 0.7;
-}
-
-.chatInput {
-  padding: 20px;
+.inputArea {
+  padding: 20px 24px;
   background: white;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #f1f5f9;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.chatInput input {
+.input {
   flex: 1;
-  background: #F8FAFC;
-  border: 1px solid rgba(0,0,0,0.05);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
   padding: 12px 20px;
-  border-radius: 10px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
   outline: none;
-  transition: all 0.3s;
+  transition: all 0.2s;
+  color: #1e293b;
 }
 
-.chatInput input:focus {
+.input:focus {
+  border-color: #706fd3;
   background: white;
-  border-color: #ff9f43;
-  box-shadow: 0 0 0 4px rgba(255, 159, 67, 0.1);
+  box-shadow: 0 0 0 4px rgba(112, 111, 211, 0.1);
 }
 
-.sendIcon {
-  width: 40px;
-  height: 40px;
-  background: #ff9f43;
+.sendButton {
+  background: #706fd3;
   color: white;
-  border-radius: 10px;
+  border: none;
+  border-radius: 16px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s;
-  border: none;
+  transition: all 0.2s;
 }
 
-.sendIcon:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 159, 67, 0.3);
-  background: #ee5253;
+.sendButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(112, 111, 211, 0.4);
 }
 
-.sendIcon:disabled {
-  opacity: 0.5;
+.sendButton:disabled {
+  background: #cbd5e1;
   cursor: not-allowed;
+  transform: none;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.triggerButton {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  background: #706fd3;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 10px 25px rgba(112, 111, 211, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
 }
 
-.spin {
-  animation: spin 1s linear infinite;
+.triggerButton:hover {
+  transform: rotate(5deg) scale(1.1);
+  border-radius: 24px;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
 }

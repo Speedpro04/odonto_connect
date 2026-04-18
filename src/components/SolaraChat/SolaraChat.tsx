@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Trash2, X, Send, Sparkles } from 'lucide-react';
-import { PowerSun } from '../Logo/Logo';
+import { Trash2, X, Send, Sparkles, BrainCircuit } from 'lucide-react';
 import styles from './chat.module.css';
 
 interface Message {
@@ -17,7 +16,7 @@ interface SolaraChatProps {
 
 export default function SolaraChat({ isOpen, onClose }: SolaraChatProps) {
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', text: 'Olá, sou Solara, sua gestora inteligente. Como posso ajudar com a gestão da clínica hoje?' }
+    { role: 'model', text: 'Olá, sou Solara, sua estrategista de negócios de elite. Como posso otimizar a performance da sua clínica hoje?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -47,7 +46,7 @@ export default function SolaraChat({ isOpen, onClose }: SolaraChatProps) {
       const data = await response.json();
       setMessages(prev => [...prev, { role: 'model', text: data.response }]);
     } catch (error) {
-      setMessages(prev => [...prev, { role: 'model', text: 'Desculpe, tive um erro de conexão.' }]);
+      setMessages(prev => [...prev, { role: 'model', text: 'Desculpe, tive uma instabilidade neural temporária. Como posso retomar?' }]);
     } finally {
       setIsLoading(false);
     }
@@ -56,40 +55,71 @@ export default function SolaraChat({ isOpen, onClose }: SolaraChatProps) {
   if (!isOpen) return null;
 
   return (
-    <div className={styles.aiChatContainer}>
-      <div className={styles.chatHeader}>
-        <div className={styles.chatHeaderInfo}>
-          <PowerSun size={32} />
+    <div className={styles.chatWindow}>
+      <div className={styles.header}>
+        <div className={styles.headerInfo}>
+          <img src="/solara-logo.png" alt="Solara" style={{ width: '32px', height: 'auto', objectFit: 'contain' }} />
+          <div className="flex flex-col">
+            <span className="text-[10px] font-black tracking-[2px] opacity-60 uppercase">Estrategista</span>
+            <span className="text-xs font-bold uppercase tracking-widest">Solara IA</span>
+          </div>
         </div>
-        <div className={styles.chatActions}>
-          <button className={styles.actionBtn} title="Limpar" onClick={() => setMessages([{ role: 'model', text: 'Olá, sou Solara, como posso ajudar?' }])}><Trash2 size={14} /></button>
-          <button className={styles.actionBtn} title="Fechar" onClick={onClose}><X size={14} /></button>
+        <div className="flex gap-2">
+           <button 
+             className={styles.closeButton} 
+             onClick={() => setMessages([{ role: 'model', text: 'Histórico limpo. Pronto para novos insights.' }])}
+             title="Limpar memória"
+           >
+             <Trash2 size={16} />
+           </button>
+           <button 
+             className={styles.closeButton} 
+             onClick={onClose}
+             title="Fechar chat"
+           >
+             <X size={18} />
+           </button>
         </div>
       </div>
       
-      <div className={styles.chatBody} ref={scrollRef}>
+      <div className={styles.messages} ref={scrollRef}>
         {messages.map((msg, index) => (
-          <div key={index} className={`${styles.messageWrapper} ${msg.role === 'user' ? styles.userMsg : styles.aiMsg}`}>
-            <p>{msg.text}</p>
+          <div 
+            key={index} 
+            className={`${styles.message} ${msg.role === 'user' ? styles.userMessage : styles.assistantMessage}`}
+          >
+            {msg.role === 'model' && (
+              <div className="flex items-center gap-2 mb-2 opacity-40">
+                <BrainCircuit size={10} />
+                <span className="text-[8px] font-black uppercase tracking-widest">Neural Link</span>
+              </div>
+            )}
+            <p className="whitespace-pre-wrap">{msg.text}</p>
           </div>
         ))}
         {isLoading && (
-          <div className={styles.aiMsg}>
-            <p className={styles.typing}>Digitando...</p>
+          <div className={`${styles.message} ${styles.assistantMessage}`}>
+             <div className="flex gap-1 items-center p-1">
+                <div className="w-1.5 h-1.5 bg-[#706fd3] rounded-full animate-bounce"></div>
+                <div className="w-1.5 h-1.5 bg-[#706fd3] rounded-full animate-bounce [animation-delay:0.2s]"></div>
+                <div className="w-1.5 h-1.5 bg-[#706fd3] rounded-full animate-bounce [animation-delay:0.4s]"></div>
+             </div>
           </div>
         )}
       </div>
 
-      <div className={styles.chatInput}>
+      <div className={styles.inputArea}>
         <input 
+          className={styles.input}
           type="text" 
-          placeholder="Digite sua dúvida..." 
+          placeholder="Consulte sua estratégia..." 
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+          autoFocus
         />
-        <button className={styles.sendIcon} onClick={handleSend} disabled={isLoading}>
-          {isLoading ? <Sparkles className={styles.spin} size={16} /> : <Send size={16} />}
+        <button className={styles.sendButton} onClick={handleSend} disabled={isLoading || !input.trim()}>
+          {isLoading ? <Sparkles className="animate-spin" size={18} /> : <Send size={18} />}
         </button>
       </div>
     </div>
